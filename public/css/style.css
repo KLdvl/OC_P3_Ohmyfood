@@ -1,4 +1,31 @@
 /* import Google-font */
 @import url();
+/* reset styles */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* importation barre de navigation */
+/* fin de la barre de navigation */
+/* importantion du header */
+/* fin du header */
+/* importation du form */
+/* fin du form */
+/* importation du container */
+/* fin du container */
+/* importation du footer */
+/* fin du footer */
+/*importation de composants */
+/* fin de composants */
 
 /*# sourceMappingURL=style.css.map */
