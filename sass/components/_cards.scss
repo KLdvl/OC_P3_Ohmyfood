@@ -15,9 +15,7 @@
         width: 100%;
         height: 70%;
         border-radius: 20px 20px 0 0;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include imgback;
         position: relative;
         // essayer de faire une boucle pour les images
         &.image1 {
@@ -64,7 +62,7 @@
           }
         }
         &--heart {
-          font-size: 20px;
+          font-size: $font-size-icon;
         }
       }
     }

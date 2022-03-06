@@ -1,8 +1,8 @@
 /* reset styles */
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -13,4 +13,8 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+}
+h1 {
+  margin: 0;
+  padding: 0;
 }

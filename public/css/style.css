@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,900&family=Shrikhand&display=swap");
 /* reset styles */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -13,6 +13,11 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
 /* importation barre de navigation */
@@ -32,6 +37,7 @@ a {
   justify-content: center;
   align-items: center;
   font-family: "Shrikhand", cursive;
+  margin: 10px;
 }
 .header__searchbar {
   display: flex;
@@ -71,6 +77,51 @@ a {
   border-radius: 25px;
   box-shadow: 2px 2px 5px grey;
   margin: 10px 0 20px 0;
+}
+
+.headerpage {
+  display: flex;
+  flex-direction: column;
+}
+.headerpage__logo {
+  display: flex;
+  align-items: center;
+}
+.headerpage__logo--text {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Shrikhand", cursive;
+  transform: translateX(-5%);
+  margin: 10px;
+}
+.headerpage__logo--goback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  font-weight: 900;
+  font-size: 20px;
+}
+.headerpage__img {
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.headerpage__img.image1 {
+  background-image: url("../images/02_medium/la_palette_du_gout_900x600.jpg");
+}
+.headerpage__img.image2 {
+  background-image: url("../images/02_medium/la_note_enchantee_720x900.jpg");
+}
+.headerpage__img.image3 {
+  background-image: url("../images/02_medium/a_la_francaise_900x600.jpg");
+}
+.headerpage__img.image4 {
+  background-image: url("../images/02_medium/le_delice_des_sens_900x617.jpg");
 }
 
 /* fin du header */
@@ -119,6 +170,71 @@ a {
 }
 .functionning__steps .step__icon .violet {
   color: #9356dc;
+}
+
+.restaurant {
+  border-radius: 40px 40px 0 0;
+  margin-top: -40px;
+  background-color: #f6f6f6;
+  position: relative;
+  z-index: 10;
+  padding: 30px 15px;
+}
+.restaurant__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurant__header--title {
+  font-family: "Shrikhand", cursive;
+}
+.restaurant__header--icon {
+  font-size: 20px;
+  margin-right: 20px;
+}
+.restaurant__menu {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+}
+.restaurant__menu--title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  width: 12%;
+  border-bottom: 3px solid #99e2d0;
+  padding-bottom: 3px;
+}
+.restaurant__menu--items {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant__menu--items .item {
+  box-shadow: 2px 2px 10px lightgrey;
+  width: inherit;
+  margin: 10px 0;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.restaurant__menu--items .item__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.restaurant__menu--items .item__text--title {
+  margin-bottom: 10px;
+}
+.restaurant__menu--items .item__text--description {
+  font-weight: 300;
+  font-size: 14px;
+}
+.restaurant__menu--items .item__price {
+  justify-self: flex-end;
+  align-self: flex-end;
 }
 
 /* fin du container */
