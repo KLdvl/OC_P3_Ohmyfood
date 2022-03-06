@@ -26,6 +26,7 @@
 /* fin du form */
 
 /* importation du container */
+@import "./layouts/main";
 @import "./layouts/container";
 /* fin du container */
 
@@ -41,4 +42,20 @@
 body {
   font-size: $base-font-size;
   font-family: "Roboto", sans-serif;
+}
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: $lightgrey;
+  padding: 35px 15px;
+  .cards {
+    .card {
+      margin: 15px 0;
+      width: inherit;
+      height: 220px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 2px 2px 10px lightgrey;
+    }
+  }
 }

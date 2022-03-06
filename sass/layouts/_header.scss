@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  &__logo {
+    @include flex-center;
+    &--text {
+      @include flex-center;
+      font-family: $font-logo;
+    }
+  }
+  &__searchbar {
+    @include flex-center;
+    background-color: $grey;
+    padding: 15px 0;
+    box-shadow: inset 0px 5px 5px -5px grey;
+    &--input {
+      padding-left: 15px;
+      max-width: 40%;
+      border: none;
+      background-color: $grey;
+    }
+  }
+  &__intro {
+    background-color: $lightgrey;
+    @include flex-center;
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+    &--text {
+      margin: 20px;
+      font-weight: 300;
+    }
+    &--button {
+      @include button;
+      margin: 10px 0 20px 0;
+    }
+  }
+}
