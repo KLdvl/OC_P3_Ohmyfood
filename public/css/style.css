@@ -123,14 +123,31 @@ a {
 
 /* fin du container */
 /* importation du footer */
-/* fin du footer */
-/*importation de composants */
-/* fin de composants */
-body {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+}
+.footer__description {
+  padding-top: 15px;
+}
+.footer__description ul {
+  display: flex;
+  flex-direction: column;
+}
+.footer__description ul li {
+  padding: 5px 0;
+  font-size: 14px;
+  font-weight: 300;
 }
 
+/* fin du footer */
+/*importation de composants */
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -199,6 +216,12 @@ body {
 }
 .restaurants .cards .card__description--heart {
   font-size: 20px;
+}
+
+/* fin de composants */
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
