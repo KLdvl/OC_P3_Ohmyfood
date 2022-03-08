@@ -5,29 +5,20 @@
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/extensions";
 @import "./utils/responsive";
+@import "./utils/animations";
 
 // Base & layout
 
 @import "./base/typography";
 @import "./base/base";
 
-/* importation barre de navigation */
-@import "./layouts/nav";
-/* fin de la barre de navigation */
-
 /* importantion du header */
 @import "./layouts/header";
 /* fin du header */
 
-/* importation du form */
-@import "./layouts/form";
-/* fin du form */
-
 /* importation du container */
 @import "./layouts/main";
-@import "./layouts/container";
 @import "./pages/page";
 /* fin du container */
 
@@ -36,7 +27,6 @@
 /* fin du footer */
 
 /*importation de composants */
-@import "./components/buttons";
 @import "./components/cards";
 /* fin de composants */
 
