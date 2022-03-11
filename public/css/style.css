@@ -1,4 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,900&family=Shrikhand&display=swap");
+.fa-heart {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.fa-heart::after {
+  content: "\f004";
+  display: block;
+  font-weight: 900;
+  position: absolute;
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  height: 0%;
+  width: 100%;
+}
+
+.fa-heart:hover::after {
+  height: 100%;
+}
+
+@keyframes disappear {
+  0%, 99% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* reset styles */
 * {
   margin: 0;
@@ -76,6 +122,11 @@ h1 {
   border-radius: 25px;
   box-shadow: 2px 2px 5px grey;
   margin: 10px 0 20px 0;
+}
+.header__intro--button:hover {
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
 }
 
 .headerpage {
@@ -301,6 +352,11 @@ h1 {
   align-self: center;
   padding: 0 60px;
 }
+.restaurant__button:hover {
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+}
 
 /* fin du container */
 /* importation du footer */
@@ -397,6 +453,40 @@ h1 {
 }
 .restaurants .cards .card__description--heart {
   font-size: 20px;
+}
+
+.container {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: disappear 3s forwards;
+  z-index: 20;
+}
+
+#oh {
+  color: #9356dc;
+  animation: loader 1s both;
+}
+
+#my {
+  color: #ff79da;
+  animation: loader 1s 1s both;
+}
+
+#food {
+  color: #99e2d0;
+  animation: loader 1s 2s both;
 }
 
 /* fin de composants */
