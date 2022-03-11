@@ -67,10 +67,16 @@ h1 {
   padding: 0;
 }
 
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
 /* importantion du header */
 .header {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .header__logo {
   display: flex;
@@ -91,10 +97,11 @@ h1 {
   background-color: #eaeaea;
   padding: 15px 0;
   box-shadow: inset 0px 5px 5px -5px grey;
+  width: 100%;
 }
 .header__searchbar--input {
   padding-left: 15px;
-  max-width: 40%;
+  max-width: 130px;
   border: none;
   background-color: #eaeaea;
 }
@@ -106,6 +113,7 @@ h1 {
   flex-direction: column;
   padding: 30px 20px;
   text-align: center;
+  width: 100%;
 }
 .header__intro--text {
   margin: 20px;
@@ -198,6 +206,12 @@ h1 {
   border-radius: 20px;
   box-shadow: 2px 2px 10px lightgrey;
 }
+.functionning__steps .step:hover {
+  cursor: pointer;
+}
+.functionning__steps .step:hover .step__icon {
+  color: #9356dc;
+}
 .functionning__steps .step__number, .functionning__steps .step__icon {
   margin-right: 25px;
 }
@@ -215,9 +229,6 @@ h1 {
 }
 .functionning__steps .step__icon {
   color: grey;
-}
-.functionning__steps .step__icon .violet {
-  color: #9356dc;
 }
 
 .restaurant {
@@ -358,6 +369,46 @@ h1 {
   cursor: pointer;
 }
 
+.starters > .restaurant__menu--items .item:nth-child(1) {
+  animation: loader 0.3s 0.3s both;
+}
+
+.starters > .restaurant__menu--items .item:nth-child(2) {
+  animation: loader 0.3s 0.6s both;
+}
+
+.starters > .restaurant__menu--items .item:nth-child(3) {
+  animation: loader 0.3s 0.9s both;
+}
+
+.starters > .restaurant__menu--items .item:nth-child(4) {
+  animation: loader 0.3s 1.2s both;
+}
+
+.dishes > .restaurant__menu--items .item:nth-child(1) {
+  animation: loader 0.3s 1.5s both;
+}
+
+.dishes > .restaurant__menu--items .item:nth-child(2) {
+  animation: loader 0.3s 1.8s both;
+}
+
+.dishes > .restaurant__menu--items .item:nth-child(3) {
+  animation: loader 0.3s 2.1s both;
+}
+
+.deserts > .restaurant__menu--items .item:nth-child(1) {
+  animation: loader 0.3s 2.7s both;
+}
+
+.deserts > .restaurant__menu--items .item:nth-child(2) {
+  animation: loader 0.3s 3s both;
+}
+
+.deserts > .restaurant__menu--items .item:nth-child(3) {
+  animation: loader 0.3s 3.3s both;
+}
+
 /* fin du container */
 /* importation du footer */
 .footer {
@@ -490,9 +541,5 @@ h1 {
 }
 
 /* fin de composants */
-body {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-}
 
 /*# sourceMappingURL=style.css.map */

@@ -17,7 +17,6 @@
         border-radius: 20px 20px 0 0;
         @include imgback;
         position: relative;
-        // essayer de faire une boucle pour les images
         &.image1 {
           background-image: url("../images/03_small/la_palette_du_gout_450x300.jpg");
         }

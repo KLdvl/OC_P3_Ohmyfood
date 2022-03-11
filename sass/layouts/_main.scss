@@ -15,6 +15,12 @@
       align-items: center;
       border-radius: 20px;
       box-shadow: 2px 2px 10px lightgrey;
+      &:hover {
+        cursor: pointer;
+      }
+      &:hover .step__icon {
+        color: $primary;
+      }
       &__number,
       &__icon {
         margin-right: 25px;
@@ -31,9 +37,6 @@
       }
       &__icon {
         color: grey;
-        .violet {
-          color: $primary;
-        }
       }
     }
   }
