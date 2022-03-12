@@ -118,18 +118,9 @@
     padding: 0 60px;
   }
 }
-@for $i from 1 through 4 {
-  .starters > .restaurant__menu--items .item:nth-child(#{$i}) {
-    animation: loader 0.3s 0.3s * $i both;
-  }
-}
+
 @for $i from 1 through 3 {
-  .dishes > .restaurant__menu--items .item:nth-child(#{$i}) {
-    animation: loader 0.3s 0.3s * $i + 1.2 both;
-  }
-}
-@for $i from 1 through 3 {
-  .deserts > .restaurant__menu--items .item:nth-child(#{$i}) {
-    animation: loader 0.3s 0.3s * $i + 2.4 both;
+  .restaurant__menu:nth-of-type(#{$i}) {
+    animation: loader 0.5s 0.5s * $i both;
   }
 }

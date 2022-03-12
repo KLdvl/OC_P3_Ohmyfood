@@ -369,44 +369,16 @@ body {
   cursor: pointer;
 }
 
-.starters > .restaurant__menu--items .item:nth-child(1) {
-  animation: loader 0.3s 0.3s both;
+.restaurant__menu:nth-of-type(1) {
+  animation: loader 0.5s 0.5s both;
 }
 
-.starters > .restaurant__menu--items .item:nth-child(2) {
-  animation: loader 0.3s 0.6s both;
+.restaurant__menu:nth-of-type(2) {
+  animation: loader 0.5s 1s both;
 }
 
-.starters > .restaurant__menu--items .item:nth-child(3) {
-  animation: loader 0.3s 0.9s both;
-}
-
-.starters > .restaurant__menu--items .item:nth-child(4) {
-  animation: loader 0.3s 1.2s both;
-}
-
-.dishes > .restaurant__menu--items .item:nth-child(1) {
-  animation: loader 0.3s 1.5s both;
-}
-
-.dishes > .restaurant__menu--items .item:nth-child(2) {
-  animation: loader 0.3s 1.8s both;
-}
-
-.dishes > .restaurant__menu--items .item:nth-child(3) {
-  animation: loader 0.3s 2.1s both;
-}
-
-.deserts > .restaurant__menu--items .item:nth-child(1) {
-  animation: loader 0.3s 2.7s both;
-}
-
-.deserts > .restaurant__menu--items .item:nth-child(2) {
-  animation: loader 0.3s 3s both;
-}
-
-.deserts > .restaurant__menu--items .item:nth-child(3) {
-  animation: loader 0.3s 3.3s both;
+.restaurant__menu:nth-of-type(3) {
+  animation: loader 0.5s 1.5s both;
 }
 
 /* fin du container */
@@ -541,5 +513,56 @@ body {
 }
 
 /* fin de composants */
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .functionning__steps {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .restaurants .cards .card {
+    width: 75%;
+    margin: 20px auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: #f6f6f6;
+  }
+
+  .main {
+    display: flex;
+    margin: 0 30px;
+    align-items: center;
+  }
+
+  .functionning {
+    width: 20%;
+  }
+
+  .restaurants {
+    width: 80%;
+  }
+  .restaurants .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .restaurants .cards .card {
+    width: 47%;
+  }
+  .restaurants .cards .card__img.image1 {
+    background-image: url("../images/02_medium/la_palette_du_gout_900x600.jpg");
+  }
+  .restaurants .cards .card__img.image2 {
+    background-image: url("../images/02_medium/la_note_enchantee_720x900.jpg");
+  }
+  .restaurants .cards .card__img.image3 {
+    background-image: url("../images/02_medium/a_la_francaise_900x600.jpg");
+  }
+  .restaurants .cards .card__img.image4 {
+    background-image: url("../images/02_medium/le_delice_des_sens_900x617.jpg");
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

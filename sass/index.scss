@@ -5,7 +5,6 @@
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/responsive";
 @import "./utils/animations";
 
 // Base & layout
@@ -30,3 +29,5 @@
 @import "./components/cards";
 @import "./components/loader";
 /* fin de composants */
+// Importation du responsive design
+@import "./utils/responsive";
