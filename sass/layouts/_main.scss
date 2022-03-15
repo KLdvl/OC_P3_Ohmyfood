@@ -15,15 +15,12 @@
       align-items: center;
       border-radius: 20px;
       box-shadow: 2px 2px 10px lightgrey;
+      position: relative;
       &:hover {
         cursor: pointer;
       }
       &:hover .step__icon {
         color: $primary;
-      }
-      &__number,
-      &__icon {
-        margin-right: 25px;
       }
       &__number {
         height: 25px;
@@ -33,10 +30,16 @@
         background-color: $primary;
         border-radius: 100%;
         @include flex-center;
-        margin-left: -10px;
+        position: absolute;
+        left: -10px;
       }
       &__icon {
         color: grey;
+        width: 20%;
+        @include flex-center;
+      }
+      &__text {
+        width: 60%;
       }
     }
   }

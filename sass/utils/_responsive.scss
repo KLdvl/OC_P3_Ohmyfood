@@ -85,8 +85,6 @@ $tablet-down: "only screen and (max-width: #{$tablet})";
     }
   }
   .restaurant {
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px;
     &__header {
@@ -99,5 +97,9 @@ $tablet-down: "only screen and (max-width: #{$tablet})";
     &__button {
       margin: auto;
     }
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }

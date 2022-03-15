@@ -45,6 +45,17 @@
     opacity: 1;
   }
 }
+@keyframes menucards {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* reset styles */
 * {
   margin: 0;
@@ -205,15 +216,13 @@ body {
   align-items: center;
   border-radius: 20px;
   box-shadow: 2px 2px 10px lightgrey;
+  position: relative;
 }
 .functionning__steps .step:hover {
   cursor: pointer;
 }
 .functionning__steps .step:hover .step__icon {
   color: #9356dc;
-}
-.functionning__steps .step__number, .functionning__steps .step__icon {
-  margin-right: 25px;
 }
 .functionning__steps .step__number {
   height: 25px;
@@ -225,10 +234,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -10px;
+  position: absolute;
+  left: -10px;
 }
 .functionning__steps .step__icon {
   color: grey;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.functionning__steps .step__text {
+  width: 60%;
 }
 
 .restaurant {
@@ -370,15 +387,15 @@ body {
 }
 
 .restaurant__menu:nth-of-type(1) {
-  animation: loader 0.5s 0.5s both;
+  animation: menucards 0.5s 0.5s both;
 }
 
 .restaurant__menu:nth-of-type(2) {
-  animation: loader 0.5s 1s both;
+  animation: menucards 0.5s 1s both;
 }
 
 .restaurant__menu:nth-of-type(3) {
-  animation: loader 0.5s 1.5s both;
+  animation: menucards 0.5s 1.5s both;
 }
 
 /* fin du container */
@@ -585,8 +602,6 @@ body {
   }
 
   .restaurant {
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px;
   }
@@ -599,6 +614,11 @@ body {
   }
   .restaurant__button {
     margin: auto;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

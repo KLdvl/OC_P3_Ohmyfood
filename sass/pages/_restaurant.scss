@@ -121,6 +121,6 @@
 
 @for $i from 1 through 3 {
   .restaurant__menu:nth-of-type(#{$i}) {
-    animation: loader 0.5s 0.5s * $i both;
+    animation: menucards 0.5s 0.5s * $i both;
   }
 }
