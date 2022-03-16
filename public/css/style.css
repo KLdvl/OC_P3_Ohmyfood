@@ -112,7 +112,7 @@ body {
 }
 .header__searchbar--input {
   padding-left: 15px;
-  max-width: 130px;
+  width: 150px;
   border: none;
   background-color: #eaeaea;
 }
