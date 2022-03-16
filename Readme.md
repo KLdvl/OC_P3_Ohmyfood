@@ -6,7 +6,7 @@
 
 3ème projet de la formation de développeur web d'OpenClassroom.
 
-![Screenshot du site avec aperçu des pages mobiles](./public/images/screenshot.png)
+![Screenshot du site avec aperçu des pages mobiles](./images/screenshot.png)
 
 ## Enjeux
 ---
