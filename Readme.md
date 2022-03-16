@@ -6,7 +6,7 @@
 
 3ème projet de la formation de développeur web d'OpenClassroom.
 
-![Screenshot du site avec aperçu des pages mobiles](./images/screenshot.png)
+![Screenshot du site avec aperçu des pages mobiles](https://github.com/KLdvl/OC_P3_Ohmyfood/blob/master/public/images/Screenshot.png)
 
 ## Enjeux
 ---
