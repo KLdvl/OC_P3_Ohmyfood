@@ -15,15 +15,15 @@
   z-index: 20;
 }
 
-#oh {
+.container span:nth-child(1) {
   color: $primary;
   animation: loader 1s both;
 }
-#my {
+.container span:nth-child(2) {
   color: $secondary;
   animation: loader 1s 1s both;
 }
-#food {
+.container span:nth-child(3) {
   color: $tertiary;
   animation: loader 1s 2s both;
 }
