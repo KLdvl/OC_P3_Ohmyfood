@@ -31,9 +31,17 @@ $tablet-down: "only screen and (max-width: #{$tablet})";
     display: flex;
     margin: 0 30px;
     align-items: center;
+    flex-direction: column;
   }
   .functionning {
-    width: 25%;
+    min-width: 80%;
+    padding: 20px;
+    &__title {
+      text-align: center;
+    }
+    &__steps {
+      flex-direction: row;
+    }
   }
   .restaurants {
     width: 75%;

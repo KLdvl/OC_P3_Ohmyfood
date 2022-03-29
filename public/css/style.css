@@ -122,8 +122,18 @@ body {
 .header__searchbar--input {
   padding-left: 15px;
   width: 150px;
-  border: none;
+  border: 1px solid transparent;
   background-color: #eaeaea;
+  margin-left: 5px;
+}
+.header__searchbar--input:hover {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px grey;
+}
+.header__searchbar--input:focus {
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px grey;
 }
 .header__intro {
   background-color: #f6f6f6;
@@ -567,10 +577,18 @@ body {
     display: flex;
     margin: 0 30px;
     align-items: center;
+    flex-direction: column;
   }
 
   .functionning {
-    width: 25%;
+    min-width: 80%;
+    padding: 20px;
+  }
+  .functionning__title {
+    text-align: center;
+  }
+  .functionning__steps {
+    flex-direction: row;
   }
 
   .restaurants {
